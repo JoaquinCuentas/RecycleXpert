@@ -1,20 +1,30 @@
 body {
-    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url('imagenes/fondo2.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     margin: 0;
-    padding: 0;
-    background-color: #f0f0f0;
-    color: #333;
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    text-align: center;
 }
 
 header {
-    background-color: #4CAF50;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    width: 100%;
     padding: 10px 0;
+    text-align: center;
 }
 
 nav ul {
     list-style: none;
-    margin: 0;
     padding: 0;
+    margin: 0;
     display: flex;
     justify-content: center;
 }
@@ -24,59 +34,57 @@ nav ul li {
 }
 
 nav ul li a {
-    color: white;
+    color: #fff;
     text-decoration: none;
-    font-weight: bold;
 }
 
 section {
     padding: 20px;
-    text-align: center;
+    background: rgba(255, 255, 255, 0.8);
+    margin: 20px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 800px;
+    box-sizing: border-box;
 }
 
-section h1, section h2 {
-    margin: 10px 0;
+.service-item {
+    margin-bottom: 20px;
 }
 
-section p {
-    margin: 10px 0;
-    line-height: 1.6;
+.service-item img {
+    display: block;
+    margin: 0 auto 10px;
 }
 
-form {
+#inicio {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
 
-form label {
-    margin: 10px 0 5px;
+#inicio h1, #inicio p {
+    margin: 0; /* Elimina los márgenes por defecto para un centrado exacto */
 }
 
-form input, form textarea {
-    padding: 10px;
-    margin-bottom: 10px;
-    width: 80%;
-    max-width: 400px;
-    border: 1px solid #4CAF50;
-    border-radius: 5px;
+
+#eventos .eventos-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px; 
 }
 
-form button {
-    padding: 10px 20px;
-    border: none;
-    background-color: #4CAF50;
-    color: white;
-    border-radius: 5px;
-    cursor: pointer;
+#eventos .eventos-container img {
+    width: 100%;
+    max-width: 250px; 
+    border-radius: 10px;
 }
 
 footer {
-    background-color: #4CAF50;
-    color: white;
     text-align: center;
-    padding: 10px 0;
-    position: fixed;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
     width: 100%;
-    bottom: 0;
 }
