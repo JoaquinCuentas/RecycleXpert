@@ -1,0 +1,90 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url('imagenes/fondo2.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    text-align: center;
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    width: 100%;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+section {
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.8);
+    margin: 20px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 800px;
+    box-sizing: border-box;
+}
+
+.service-item {
+    margin-bottom: 20px;
+}
+
+.service-item img {
+    display: block;
+    margin: 0 auto 10px;
+}
+
+#inicio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#inicio h1, #inicio p {
+    margin: 0; /* Elimina los márgenes por defecto para un centrado exacto */
+}
+
+
+#eventos .eventos-container {
+    display: flex;
+    justify-content: space-between
+    gap: 20px; 
+}
+
+#eventos .eventos-container img {
+    width: 100%;
+    max-width: 250px; 
+    border-radius: 10px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    width: 100%;
+}
